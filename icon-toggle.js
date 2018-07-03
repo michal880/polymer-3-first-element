@@ -36,6 +36,10 @@ class IconToggle extends PolymerElement {
   }
   constructor() {
     super();
+    this.addEventListener('click', this.toggle.bind(this));
+  }
+  toggle() {
+    this.pressed = !this.pressed;
   }
 }
 
