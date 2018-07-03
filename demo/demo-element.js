@@ -6,9 +6,12 @@ class DemoElement extends PolymerElement {
   static get template() {
     return html`
       <style>
-        :host {
-          font-family: sans-serif;
-        }
+      :host {
+      font-family: sans-serif;
+      --icon-toggle-color: lightgrey;
+      --icon-toggle-outline-color: black;
+      --icon-toggle-pressed-color: red;
+      }
       </style>
       
       <h3>Statically-configured icon-toggles</h3>
